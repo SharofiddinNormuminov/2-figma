@@ -454,19 +454,19 @@ span {
 
 .bizeUlashin p {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .bizeUlashin button {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2rem;
   color: #fff;
   padding: 1.1rem 2rem;
   background: #f84646;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: none;
 }
 
@@ -482,15 +482,11 @@ footer {
   align-items: center;
 }
 
-.footer-xizmatlar {
-  max-width: 27.8rem;
-}
-
 .footer-xizmatlar .Xizmetler h5 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: #fff;
   margin-top: 4.9rem;
   margin-bottom: 2.5rem;
@@ -512,8 +508,8 @@ footer {
 .footer-xizmatlar .Xizmetler ul li a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
 
   color: #e6e6e6;
 }
@@ -522,7 +518,6 @@ footer {
   display: flex;
   flex-direction: column-reverse;
   gap: 6.7rem;
-
   margin-top: 3.5rem;
 }
 
@@ -550,6 +545,12 @@ footer {
 } */
 
 @media screen and (min-width: 1024px) {
+  header {
+    background-image: url(../img/header-background1.png);
+    /* background-position: ; */
+    background-position-x: 20%;
+  }
+
   .navbar {
     display: flex;
     justify-content: end;
@@ -562,7 +563,7 @@ footer {
 
   .navbar .nav-left .links {
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
     align-items: center;
     gap: 4rem;
     list-style: none;
@@ -670,6 +671,7 @@ footer {
   .content .KaliteVeSurech-txt p {
     max-width: 42.8rem;
     text-align: start;
+    margin: auto;
   }
 
   .content .KaliteVeSurech-txt button {
@@ -684,8 +686,12 @@ footer {
     margin-top: 12rem;
   }
 
-  .KaliteVeSurech .content:nth-child(2) .KaliteVeSurech-image img {
-    width: 44.4rem;
+  .KaliteVeSurech .content:nth-child(2) .KaliteVeSurech-image img:nth-child(1) {
+    display: inline-block;
+  }
+
+  .KaliteVeSurech .content:nth-child(2) .KaliteVeSurech-image img:nth-child(2) {
+    display: none;
   }
 
   .referanslarimiz .referanslarimiz-content h3 {
@@ -727,12 +733,148 @@ footer {
     margin-bottom: 3rem;
   }
 
-  .bizeUlashin button{
+  .bizeUlashin button {
     font-size: 2.4rem;
     padding: 2.5rem 4rem;
   }
-  
-  .footer-xizmatlar{
+
+  .footer-xizmatlar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    column-gap: 4rem;
+  }
+
+  .footer-xizmatlar .Xizmetler:nth-child(2) {
+    max-width: 27.6rem;
+  }
+
+  .footer-xizmatlar .Xizmetler h5 {
+    margin-top: 0;
+  }
+
+  .footer-end {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: start;
+    gap: 36rem;
+    /* margin: 0; */
+    transform: translatex(-2.1rem);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    background-image: url(../img/header-background1.png);
+  }
+
+  .container {
+    width: 1350px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    margin-top: 12.5rem;
+  }
+
+  .hero h1 {
+    max-width: 66.5rem;
+    font-size: 6.4rem;
+    line-height: 8.2rem;
+  }
+
+  .hero p {
+    max-width: 65rem;
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
+
+  .hero form {
+    max-width: 50.2rem;
+  }
+
+  .sifatVaJarayonlarniBoshqarish {
+    margin-top: 12rem;
+  }
+
+  .sifatVaJarayonlarniBoshqarish h3 {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .sifatVaJarayonlarniBoshqarish p {
+    max-width: 99.4rem;
+    margin: 0 auto;
+  }
+
+  .sifatVaJarayonlarniBoshqarish .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .sifatVaJarayonlarniBoshqarish .cards .cards-box:nth-child(6) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .sifatVaJarayonlarniBoshqarish .cards .cards-box:nth-child(5) {
+    grid-column: 3 / span 1;
+  }
+
+  .testBoshqaruvi2 {
+    margin-top: 5rem;
+  }
+
+  .testBoshqaruvi2 h2 {
+    font-size: 5.4rem;
+    margin-bottom: 2rem;
+  }
+
+  span {
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+
+  .testBoshqaruvi-ichkiQismi .ichkiQismi-txt p {
+    font-size: 1.8rem;
+  }
+
+  .KaliteVeSurech {
+    margin-top: 12rem;
+  }
+
+  .content .KaliteVeSurech-txt h2 {
+    max-width: 60.8rem;
+    font-size: 6.4rem;
+    line-height: 7.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .content .KaliteVeSurech-txt p{
+    max-width: 52.3rem;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin: 0;
+  }
+
+  .content .KaliteVeSurech-txt button{
+    margin-top: 8rem;
+  }
+
+  .bizeUlashin{
+    margin-top: 16rem;
+  }
+
+  .bizeUlashin p{
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  .footer-end{
+    margin-top: 5rem;
+    transform: translatex(0.1rem);
     display: flex;
     justify-content: space-between;
   }
