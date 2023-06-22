@@ -583,7 +583,7 @@ footer {
 
   .hero h1 {
     text-align: start;
-    max-width: 65rem;
+    max-width: 66rem;
     font-size: 5.6rem;
   }
 
@@ -648,14 +648,19 @@ footer {
     align-items: center;
   }
 
+  .testBoshqaruvi-ichkiQismi .ichkiQismi-img {
+    transform: rotate(270deg);
+  }
+
   .testBoshqaruvi-ichkiQismi .ichkiQismi-txt p {
     text-align: start;
     font-size: 1.4rem;
-    line-height: 2.2rem;
+    line-height: 3.2rem;
   }
 
   .KaliteVeSurech .content {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     gap: 5.2rem;
   }
@@ -681,8 +686,10 @@ footer {
   }
 
   .KaliteVeSurech .content:nth-child(2) {
-    display: flex;
+    /* display: flex; */
     flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 5.6rem;
     margin-top: 12rem;
   }
 
@@ -770,7 +777,7 @@ footer {
   }
 
   .container {
-    width: 1350px;
+    width: 1200px;
     margin: 0 auto;
   }
 
@@ -845,6 +852,11 @@ footer {
     margin-top: 12rem;
   }
 
+  .KaliteVeSurech .content:nth-child(2){
+    display: flex;
+    gap: 27rem;
+  }
+
   .content .KaliteVeSurech-txt h2 {
     max-width: 60.8rem;
     font-size: 6.4rem;
@@ -852,31 +864,30 @@ footer {
     margin-bottom: 4rem;
   }
 
-  .content .KaliteVeSurech-txt p{
+  .content .KaliteVeSurech-txt p {
     max-width: 52.3rem;
     font-size: 1.6rem;
     line-height: 3.2rem;
     margin: 0;
   }
 
-  .content .KaliteVeSurech-txt button{
+  .content .KaliteVeSurech-txt button {
     margin-top: 8rem;
   }
 
-  .bizeUlashin{
+  .bizeUlashin {
     margin-top: 16rem;
   }
 
-  .bizeUlashin p{
+  .bizeUlashin p {
     font-size: 1.8rem;
     line-height: 3.2rem;
   }
 
-  .footer-end{
+  .footer-end {
     margin-top: 5rem;
     transform: translatex(0.1rem);
     display: flex;
     justify-content: space-between;
   }
-
 }
